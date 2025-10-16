@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio_saad/static/css/main.680160af.css",
+    "main.js": "/portfolio_saad/static/js/main.55795e81.js",
+    "static/js/453.515ecba2.chunk.js": "/portfolio_saad/static/js/453.515ecba2.chunk.js",
+    "static/media/og-default.jpg": "/portfolio_saad/static/media/og-default.c8e967c9cef87f9f874d.jpg",
+    "static/media/cpge_mohamed_v_casablanca_cover.jpeg": "/portfolio_saad/static/media/cpge_mohamed_v_casablanca_cover.6504f99002ac0460a675.jpeg",
+    "static/media/project1.png": "/portfolio_saad/static/media/project1.5dd6b947e777a3147bc4.png",
+    "static/media/Gascogne-bois-le-comptoir-gris.png": "/portfolio_saad/static/media/Gascogne-bois-le-comptoir-gris.1eae35d46ecc67ce8b4a.png",
+    "static/media/visuel_batiment.jpg": "/portfolio_saad/static/media/visuel_batiment.23e04ccae28c75464c91.jpg",
+    "static/media/KAEL - logo inversé_portfolio.png": "/portfolio_saad/static/media/KAEL - logo inversé_portfolio.2a16031570cfa8ed06a3.png",
+    "index.html": "/portfolio_saad/index.html",
+    "main.680160af.css.map": "/portfolio_saad/static/css/main.680160af.css.map",
+    "main.55795e81.js.map": "/portfolio_saad/static/js/main.55795e81.js.map",
+    "453.515ecba2.chunk.js.map": "/portfolio_saad/static/js/453.515ecba2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.680160af.css",
+    "static/js/main.55795e81.js"
+  ]
+}

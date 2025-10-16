@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-b from-pink-50 via-white to-fuchsia-50 text-gray-900 transition-colors duration-700;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  @apply text-fuchsia-600 hover:text-pink-700 transition-colors duration-200;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f472b6, #a855f7);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ec4899, #9333ea);
+}
+
+::selection {
+  background-color: #f472b6;
+  color: white;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
