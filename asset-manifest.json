@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio_Yara/static/css/main.277b6d70.css",
+    "main.js": "/portfolio_Yara/static/js/main.ee7b76fa.js",
+    "static/js/453.515ecba2.chunk.js": "/portfolio_Yara/static/js/453.515ecba2.chunk.js",
+    "static/media/project_img3.png": "/portfolio_Yara/static/media/project_img3.01bfdcdc0959ae872afd.png",
+    "static/media/og-default.jpg": "/portfolio_Yara/static/media/og-default.c8e967c9cef87f9f874d.jpg",
+    "static/media/image0.jpeg": "/portfolio_Yara/static/media/image0.20aa14c070e904637c9e.jpeg",
+    "index.html": "/portfolio_Yara/index.html",
+    "main.277b6d70.css.map": "/portfolio_Yara/static/css/main.277b6d70.css.map",
+    "main.ee7b76fa.js.map": "/portfolio_Yara/static/js/main.ee7b76fa.js.map",
+    "453.515ecba2.chunk.js.map": "/portfolio_Yara/static/js/453.515ecba2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.277b6d70.css",
+    "static/js/main.ee7b76fa.js"
+  ]
+}
