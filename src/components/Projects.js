@@ -1,87 +1,90 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
-import project_img1 from '../assets/project1.png';
+import ub_logo from '../assets/bash.jpg';
+import UBGame from '../assets/ubgarden.png';
+import ProgWeb from '../assets/website-g61c1c6079_1280.jpg';
+import cProject from '../assets/formation-langage-c-avance.png'
 
 // -----------------------------
-// 🎓 Données – Projets typiques L2/L3 Université de Bordeaux
+// 📚 Données – Projets L3 Informatique Université de Bordeaux
 // -----------------------------
 const allProjects = [
   {
-    title: 'Application Web de Gestion de Bibliothèque',
-    image: project_img1,
-    date: 'Mars – Juin 2025',
+    title: 'Programmation Orientée Objet — Sauve le hérisson !',
+    image: UBGame,
+    date: 'mars 2025 – avr. 2025',
     description:
-      "Développement complet d’une application web permettant la gestion d’un catalogue de livres, des emprunts et du profil utilisateur.",
-    skills: ['React', 'Node.js', 'Express', 'PostgreSQL', 'TailwindCSS'],
+      'Développement d’un jeu interactif en Java dans le cadre du cours de Programmation Orientée Objet, illustrant l’héritage, l’encapsulation et le polymorphisme.',
+    skills: ['Java', 'POO', 'IntelliJ IDEA', 'Héritage', 'Interfaces'],
+    theme: 'Programmation Objet',
+    details: {
+      overview:
+        "J’ai développé un jeu intitulé « Sauve le hérisson ! » en appliquant les principes fondamentaux de la programmation orientée objet. Le projet incluait la gestion des états de jeu, la lecture dynamique de fichiers `.properties`, et la conception modulaire du code via classes abstraites et interfaces.",
+      highlights: [
+        'Implémentation de la logique de déplacement et d’interactions entre personnages',
+        'Gestion de l’énergie, des bonus, et des états du jeu',
+        'Structuration du code autour d’interfaces et classes abstraites',
+        'Réutilisabilité et modularité accrues du code'
+      ],
+      links: { repo: '', demo: '', paper: '' }
+    }
+  },
+  {
+    title: 'Projet Techno — Jeu en C avec SDL2',
+    image: cProject,
+    date: 'sept. 2024 – avr. 2025',
+    description:
+      'Développement d’un jeu interactif en C avec SDL2, combinant structures de données avancées, logique de jeu et interface graphique.',
+    skills: ['Langage C', 'SDL2', 'Structures de données', 'Débogage', 'Optimisation'],
+    theme: 'Programmation Système',
+    details: {
+      overview:
+        "Conception d’un mini-jeu en C combinant programmation système et développement graphique. L’objectif était de représenter et manipuler efficacement les formes du jeu tout en optimisant les performances.",
+      highlights: [
+        'Utilisation de structures `struct` et tableaux 2D pour la logique du jeu',
+        'Gestion des entrées utilisateur et conditions de victoire',
+        'Optimisation mémoire et calculs en temps réel',
+        'Implémentation graphique avec SDL2'
+      ],
+      links: { repo: '', demo: '', paper: '' }
+    }
+  },
+  {
+    title: 'Environnement de Travail Avancé — Scripts Bash',
+    image: ub_logo,
+    date: 'sept. 2024 – oct. 2024',
+    description:
+      'Formation sur Unix/Linux, administration système et programmation shell pour automatiser des processus et gérer l’environnement utilisateur.',
+    skills: ['Bash', 'Shell', 'Linux', 'Scripts', 'Optimisation terminal'],
+    theme: 'Systèmes & Réseaux',
+    details: {
+      overview:
+        "Apprentissage de la programmation shell avancée sous GNU/Linux : manipulation des processus, redirections, automatisation de tâches et configuration du shell utilisateur.",
+      highlights: [
+        'Création de scripts d’automatisation (boucles, conditions, pipes)',
+        'Gestion des processus système et variables d’environnement',
+        'Utilisation d’outils Unix : grep, find, sort, ps, top, etc.',
+        'Optimisation de l’efficacité en terminal'
+      ],
+      links: { repo: '', demo: '', paper: '' }
+    }
+  },
+  {
+    title: 'Développement Web et Base de Données',
+    image: ProgWeb,
+    date: 'janv. 2024 – juin 2024',
+    description:
+      "Développement d’une application web dynamique intégrant un mur d’images et un système de login sécurisé.",
+    skills: ['HTML', 'CSS', 'JavaScript', 'DOM', 'Project Management'],
     theme: 'Développement Web',
     details: {
       overview:
-        "Projet de fin de semestre réalisé en équipe de 4. L’objectif était de concevoir une application web fonctionnelle et responsive, intégrant une API REST sécurisée et une base de données relationnelle.",
+        "Création d’une application complète permettant aux utilisateurs de se connecter et d’interagir via un mur d’images dynamique (likes, commentaires).",
       highlights: [
-        'Architecture full-stack (React + Node + PostgreSQL)',
-        'Système d’authentification JWT et gestion des rôles',
-        'Responsive design et accessibilité',
-        'Déploiement sur Render / Vercel'
-      ],
-      links: { repo: '', demo: '', paper: '' }
-    }
-  },
-  {
-    title: 'Projet d’Intelligence Artificielle — Jeu du Morpion',
-    image: project_img1,
-    date: 'Novembre 2024 – Janvier 2025',
-    description:
-      'Implémentation d’un agent intelligent capable de jouer au morpion avec apprentissage minimax et heuristiques d’évaluation.',
-    skills: ['Python', 'Pygame', 'Minimax', 'IA de jeu', 'Algorithmique'],
-    theme: 'Intelligence Artificielle',
-    details: {
-      overview:
-        "Projet de L3 en algorithmique et IA. Implémentation d’un agent autonome capable d’apprendre et de s’adapter à l’adversaire.",
-      highlights: [
-        'Implémentation de l’algorithme Minimax avec élagage Alpha-Bêta',
-        'Interface graphique avec Pygame',
-        'Comparaison des heuristiques d’évaluation',
-        'Expérimentation sur différents niveaux de difficulté'
-      ],
-      links: { repo: '', demo: '', paper: '' }
-    }
-  },
-  {
-    title: 'Analyse de Données et Visualisation Covid-19',
-    image: project_img1,
-    date: 'Mars – Avril 2024',
-    description:
-      "Traitement et visualisation de données ouvertes (OpenData Santé) pour analyser l’évolution du Covid-19 en France.",
-    skills: ['Python', 'Pandas', 'Matplotlib', 'Plotly', 'DataViz'],
-    theme: 'Science des Données',
-    details: {
-      overview:
-        "Projet de L2 sur le traitement et la visualisation de données publiques. Objectif : construire des indicateurs pertinents et proposer une interface interactive.",
-      highlights: [
-        'Nettoyage et fusion de plusieurs jeux de données OpenData',
-        'Analyse statistique des tendances',
-        'Création de dashboards interactifs avec Plotly',
-        'Présentation orale du projet et rapport technique'
-      ],
-      links: { repo: '', demo: '', paper: '' }
-    }
-  },
-  {
-    title: 'Mini-Jeu 2D – Aventure en Pygame',
-    image: project_img1,
-    date: 'Octobre – Décembre 2023',
-    description:
-      "Création d’un jeu vidéo 2D en Python avec gestion des collisions, sons et animations.",
-    skills: ['Python', 'Pygame', 'Design de jeu', 'Sprites', 'Animation'],
-    theme: 'Programmation & Graphisme',
-    details: {
-      overview:
-        "Projet de L2 pour valider la matière Programmation orientée objet. Objectif : créer un jeu complet avec logique, physique et interface utilisateur.",
-      highlights: [
-        'Architecture orientée objet (héritage, encapsulation)',
-        'Gestion des collisions et animations sprites',
-        'Système de score et niveaux de difficulté',
-        'Musique et effets sonores intégrés'
+        'Création d’interfaces dynamiques (HTML/CSS/JS)',
+        'Gestion d’état côté client et manipulation du DOM',
+        'Mise en place d’un système d’authentification',
+        'Implémentation de fonctionnalités sociales interactives'
       ],
       links: { repo: '', demo: '', paper: '' }
     }
@@ -92,14 +95,14 @@ const allProjects = [
 // Groupement par thème
 // -----------------------------
 const themesOrder = [
-  'Développement Web',
-  'Intelligence Artificielle',
-  'Science des Données',
-  'Programmation & Graphisme'
+  'Programmation Objet',
+  'Programmation Système',
+  'Systèmes & Réseaux',
+  'Développement Web'
 ];
 
 const themedProjects = themesOrder.reduce((acc, theme) => {
-  acc[theme] = allProjects.filter((p) => p.theme === theme).slice(0, 4);
+  acc[theme] = allProjects.filter((p) => p.theme === theme);
   return acc;
 }, {});
 
@@ -115,19 +118,13 @@ const containerVariants = {
 };
 
 const themeBlockVariants = {
-  hidden: { opacity: 0, y: 30, scale: 0.98 },
-  visible: {
-    opacity: 1, y: 0, scale: 1,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-  },
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
 const projectCardVariants = {
   hidden: { opacity: 0, scale: 0.95 },
-  visible: {
-    opacity: 1, scale: 1,
-    transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] },
-  },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] } },
 };
 
 // -----------------------------
@@ -150,9 +147,9 @@ function ProjectModal({ project, onClose }) {
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
           onClick={onClose}
         >
-          <motion.div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+          <motion.div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
           <motion.div
-            className="relative z-10 w-full max-w-3xl rounded-3xl overflow-hidden bg-white shadow-2xl border border-pink-200"
+            className="relative z-10 w-full max-w-3xl rounded-3xl overflow-hidden bg-white shadow-2xl border border-fuchsia-200"
             onClick={(e) => e.stopPropagation()}
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -160,7 +157,7 @@ function ProjectModal({ project, onClose }) {
           >
             <div className="relative h-56">
               <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <button
                 onClick={onClose}
                 className="absolute top-3 right-3 bg-white/90 rounded-full w-10 h-10 text-lg font-bold text-gray-800 hover:bg-white"
@@ -213,7 +210,7 @@ function ProjectCard({ project, idx, isActive, setActive, onOpen }) {
 }
 
 // -----------------------------
-// 🌈 Composant principal
+// 🌸 Composant principal
 // -----------------------------
 export default function Projects() {
   const ref = useRef(null);
@@ -224,15 +221,13 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref} className="bg-gradient-to-b from-white via-pink-50 to-fuchsia-100 py-20 px-6">
       <motion.div initial="hidden" animate={isInView ? 'visible' : 'hidden'} variants={containerVariants} className="max-w-7xl mx-auto">
-        {/* Titre */}
         <motion.div variants={themeBlockVariants} className="mb-12 text-center">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600">
-            Projets académiques
+            Projets universitaires
           </h2>
           <div className="mx-auto mt-3 h-1.5 w-28 bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-600 rounded-full" />
         </motion.div>
 
-        {/* Grille */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {themesOrder.map((theme) => (
             <motion.div key={theme} variants={themeBlockVariants} className="rounded-3xl border border-pink-200 bg-white/80 backdrop-blur-md p-6 shadow-lg hover:shadow-fuchsia-300/40 transition-all">

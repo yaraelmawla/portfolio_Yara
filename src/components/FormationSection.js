@@ -12,7 +12,7 @@ const formations = [
     banner: univ_bordeaux,
     institution: "Université de Bordeaux",
     diplome: "Licence 3 Informatique",
-    periode: "2025 – Présent",
+    periode: "2023 – Présent",
     competences: "Programmation (Python, Java, C), Web (HTML, CSS, JS, React), Bases de données (SQL, PostgreSQL)",
   },
 ];

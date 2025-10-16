@@ -12,8 +12,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import img from "../assets/image0.jpeg";
 
 const user = {
-  name: 'Yara Mawla',
-  email: 'yara.mawla@example.com',
+  name: 'Yara ELMAWLA',
+  email: 'yara.elmawla@example.com',
   imageUrl: img,
 };
 
@@ -74,7 +74,7 @@ export default function ModernNavigation() {
                 <div className="flex items-center">
                   <a href="/" aria-label="Home" className="flex items-center space-x-2">
                     <div className="text-2xl font-extrabold tracking-widest bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent">
-                      YM
+                      YE
                     </div>
                     <span className="hidden sm:inline text-slate-600 font-medium text-sm">
                       Portfolio

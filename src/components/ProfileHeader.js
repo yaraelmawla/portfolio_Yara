@@ -5,13 +5,13 @@ import { HiOutlineMail } from "react-icons/hi";
 import avatar from "../assets/image0.jpeg";
 import cvFile from "../assets/image0.jpeg";
 
-const NAME = "Yara Mawla";
+const NAME = "Yara ELMAWLA";
 const TAGLINE = "Étudiante en L3 Informatique à l’Université de Bordeaux • Développement Web • Data & IA";
 
 const LINKS = {
-  linkedin: "https://www.linkedin.com/in/yara-mawla/",
-  github: "https://github.com/yaramawla",
-  email: "mailto:yara.mawla@example.com",
+  linkedin: "https://www.linkedin.com/in/yara-elmawla-128369376/",
+  github: "https://github.com/yaraelmawla",
+  email: "mailto:yara.elmawla@example.com",
 };
 
 

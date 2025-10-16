@@ -6,6 +6,8 @@ import AboutMe from "./components/AboutMe";
 import Formation from "./components/FormationSection"
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Certificates from './components/Certificates';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -53,12 +55,31 @@ function App() {
         </motion.div>
 
         <motion.div
+          key="Projects"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          <Projects />
+        </motion.div>
+
+        <motion.div
           key="Skills"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <Skills />
+        </motion.div>
+
+
+        <motion.div
+          key="Certificates"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          <Certificates />
         </motion.div>
       </AnimatePresence>
 

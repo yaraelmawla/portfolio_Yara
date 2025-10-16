@@ -57,22 +57,8 @@ const Experience = () => {
         "Pitch devant jury universitaire"
       ],
       skills: ["React Native", "Figma", "UI/UX", "APIs", "Prototypage", "Présentation"]
-    },
-    {
-      id: 3,
-      title: "Mini-stage – Développement Frontend (semestre libre)",
-      date: "2023",
-      institution: "Startup locale / TPE",
-      location: "Région Nouvelle-Aquitaine",
-      imageUrl: projectLab,
-      summary: "Stage court de 2 mois pour renforcer mes compétences front-end et collaborer avec une petite équipe.",
-      tasks: [
-        "Intégration de maquettes Figma en pages web responsives",
-        "Ajout de fonctionnalités interactives JavaScript",
-        "Correction de bugs et optimisation des performances"
-      ],
-      skills: ["HTML", "CSS", "JavaScript", "Responsive Design", "Debugging", "Performance"]
     }
+    
   ];
 
   return (
