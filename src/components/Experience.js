@@ -25,41 +25,69 @@ const Experience = () => {
     }
   };
 
-  const experiences = [
-    {
-      id: 1,
-      title: "Projet de L3 – Application Web de Gestion de Bibliothèque",
-      date: "2025",
-      institution: "University Bordeaux – Projet universitaire",
-      location: "Bordeaux, France",
-      imageUrl: projectLab,
-      summary: "Conception et développement d’une application web (frontend + backend) pour la gestion d’emprunts, utilisateurs et catalogues.",
-      tasks: [
-        "Création de l’API REST en Node.js / Express",
-        "Implémentation du frontend avec React + TailwindCSS",
-        "Gestion des bases de données avec PostgreSQL",
-        "Mise en place de l’authentification JWT et sécurité"
-      ],
-      skills: ["JavaScript", "Node.js", "React", "PostgreSQL", "API REST", "Authentification"]
-    },
-    {
-      id: 2,
-      title: "Participation Hackathon – Smart Campus Bordeaux",
-      date: "2024",
-      institution: "Hacke ta fac (Université de Bordeaux)",
-      location: "Bordeaux, France",
-      imageUrl: projectLab,
-      summary: "En équipe, développement d’un prototype mobile pour améliorer la mobilité sur le campus (app de guidage, stationnements, etc.).",
-      tasks: [
-        "Prototypage UI/UX avec Figma",
-        "Développement mobile avec React Native",
-        "Connexion à des APIs de géolocalisation",
-        "Pitch devant jury universitaire"
-      ],
-      skills: ["React Native", "Figma", "UI/UX", "APIs", "Prototypage", "Présentation"]
-    }
-    
-  ];
+ const experiences = [
+  {
+    id: 1,
+    title: "Conception et développement logiciel",
+    date: "2024-2025",
+    institution: "Université Bordeaux",
+    location: "Bordeaux, France",
+    imageUrl: projectLab,
+    summary: "Création de programmes efficaces en C et OCaml, intégration de solutions modulaires et fonctionnelles pour résoudre des problèmes complexes.",
+    tasks: [
+      "Création de programmes modulaires et fonctionnels",
+      "Développement de solutions logicielles performantes",
+      "Résolution de problèmes complexes en C et OCaml"
+    ],
+    skills: ["C", "OCaml", "Programmation fonctionnelle", "Modularité", "Développement logiciel"]
+  },
+  {
+    id: 2,
+    title: "Algorithmique et structures de données avancées",
+    date: "2024-2025",
+    institution: "Université Bordeaux",
+    location: "Bordeaux, France",
+    imageUrl: projectLab,
+    summary: "Optimisation et implémentation d’algorithmes sur des graphes et d’autres structures, avec une attention particulière à la performance et à la robustesse.",
+    tasks: [
+      "Implémentation d’algorithmes sur des graphes",
+      "Optimisation des structures de données",
+      "Conception de solutions performantes et robustes"
+    ],
+    skills: ["Algorithmique", "Graphes", "Structures de données", "Optimisation", "Performance"]
+  },
+  {
+    id: 3,
+    title: "Modélisation et analyse de systèmes",
+    date: "2024-2025",
+    institution: "Université Bordeaux",
+    location: "Bordeaux, France",
+    imageUrl: projectLab,
+    summary: "Élaboration de modèles de calcul et de simulations pour analyser et résoudre des situations pratiques et théoriques.",
+    tasks: [
+      "Conception de modèles de calcul",
+      "Réalisation de simulations pour l’analyse de systèmes",
+      "Résolution de situations pratiques et théoriques"
+    ],
+    skills: ["Modélisation", "Simulation", "Analyse de systèmes", "Calcul", "Résolution de problèmes"]
+  },
+  {
+    id: 4,
+    title: "Maîtrise des environnements techniques",
+    date: "2024-2025",
+    institution: "Université Bordeaux",
+    location: "Bordeaux, France",
+    imageUrl: projectLab,
+    summary: "Utilisation avancée de GNU/Linux, gestion des processus, de la mémoire et des fichiers pour des applications performantes et fiables.",
+    tasks: [
+      "Gestion des processus et de la mémoire sous GNU/Linux",
+      "Manipulation avancée des fichiers et systèmes",
+      "Développement d’applications fiables et performantes"
+    ],
+    skills: ["GNU/Linux", "Gestion de processus", "Gestion de mémoire", "Fiabilité", "Performance"]
+  }
+];
+
 
   return (
     <section
