@@ -6,6 +6,10 @@ import python from '../assets/1760560961863.pdf';
 import pix from '../assets/1759957742529.pdf';
 import english from '../assets/1759958542398.pdf';
 
+import pixLogo from '../assets/pix.png';
+import frenchLogo from '../assets/french.png';
+import englishLogo from '../assets/english.jpeg';
+
 // ---- Data ---------------------------------------------------------------
 const certificates = [
   {
@@ -38,7 +42,7 @@ const certificates = [
     expires: '—',
     credentialId: 'PIX-2024-003',
     skills: ['Compétences numériques', 'Bureautique', 'Sécurité en ligne'],
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Logo_Pix.svg',
+    logo: pixLogo ,
     pdf: pix,
   },
   {
@@ -49,7 +53,7 @@ const certificates = [
     expires: '—',
     credentialId: 'FR-B2-2023-004',
     skills: ['Français', 'Communication', 'Expression écrite et orale'],
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Institut_francais_logo.svg',
+    logo: frenchLogo ,
     pdf: 'French_certificate.pdf',
   },
   {
@@ -60,7 +64,7 @@ const certificates = [
     expires: '—',
     credentialId: 'EN-B2-2022-005',
     skills: ['English', 'Communication', 'Listening & Writing'],
-    logo: 'https://upload.wikimedia.org/wikipedia/en/3/3b/American_Learning_Center_logo.png',
+    logo: englishLogo ,
     pdf: english,
   },
 ];
@@ -117,7 +121,7 @@ function CertModal({ cert, onClose }) {
           >
             {/* Header */}
             <div className="flex items-center gap-4 border-b border-gray-100 p-4">
-              <img src={cert.logo} alt={`${cert.issuer} logo`} className="h-10 w-10 object-contain" />
+              <img src={cert.logo} alt={`${cert.issuer} logo`} className="h-10 w-10 object_contain" />
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-gray-900">{cert.title}</h3>
                 <p className="text-sm text-gray-600">{cert.issuer} • {cert.date}</p>
@@ -243,7 +247,7 @@ export default function Certificates() {
       <motion.div className="mx-auto max-w-5xl" initial="hidden" animate={isInView ? 'visible' : 'hidden'} variants={containerVariants}>
         <motion.header variants={itemVariants} className="mb-12 text-center">
           <h2 className="mb-2 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600">
-            Certifications
+            Certificates
           </h2>
           <div className="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-600" />
         </motion.header>

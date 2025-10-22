@@ -82,12 +82,13 @@ const AboutMe = () => {
           {/* Photo */}
           <motion.div
             variants={imageVariants}
-            className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[400px] lg:h-[400px] overflow-hidden shadow-2xl ring-4 ring-pink-300/50 rounded-2xl hover:scale-[1.03] transition-transform duration-500 bg-white"
+            className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[400px] lg:h-[400px] overflow-hidden shadow-2xl ring-4 ring-pink-300/50 rounded-full hover:scale-[1.03] transition-transform duration-500 bg-white"
           >
             <img
               src={pdp}
-              alt="Portrait de l’étudiante"
-              className="w-full h-full object-contain object-center"
+              alt="Yara ELMAWLA"
+              className="w-full h-full object-cover object-center scale-110 rounded-full transition-transform duration-500"
+              style={{ backgroundColor: "white" }}
             />
           </motion.div>
 

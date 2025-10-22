@@ -2,7 +2,10 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 // Logos ou visuels (à remplacer par ceux que tu possèdes)
-import projectLab from "../assets/project_img3.png";
+import projectLab from "../assets/image_1.jpg";
+import algoImg from "../assets/image_2.jpg";
+import modelImg from "../assets/image_3.jpg";
+import linuxImg from "../assets/image_4.jpg";
 
 const Experience = () => {
   const ref = useRef(null);
@@ -47,7 +50,7 @@ const Experience = () => {
     date: "2024-2025",
     institution: "Université Bordeaux",
     location: "Bordeaux, France",
-    imageUrl: projectLab,
+    imageUrl: algoImg,
     summary: "Optimisation et implémentation d’algorithmes sur des graphes et d’autres structures, avec une attention particulière à la performance et à la robustesse.",
     tasks: [
       "Implémentation d’algorithmes sur des graphes",
@@ -62,7 +65,7 @@ const Experience = () => {
     date: "2024-2025",
     institution: "Université Bordeaux",
     location: "Bordeaux, France",
-    imageUrl: projectLab,
+    imageUrl: modelImg,
     summary: "Élaboration de modèles de calcul et de simulations pour analyser et résoudre des situations pratiques et théoriques.",
     tasks: [
       "Conception de modèles de calcul",
@@ -77,7 +80,7 @@ const Experience = () => {
     date: "2024-2025",
     institution: "Université Bordeaux",
     location: "Bordeaux, France",
-    imageUrl: projectLab,
+    imageUrl: linuxImg,
     summary: "Utilisation avancée de GNU/Linux, gestion des processus, de la mémoire et des fichiers pour des applications performantes et fiables.",
     tasks: [
       "Gestion des processus et de la mémoire sous GNU/Linux",
@@ -104,7 +107,7 @@ const Experience = () => {
         {/* En-tête de section */}
         <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600">
-            Expériences & Projets
+            Apprentissages & Réalisations
           </h2>
           <div className="mx-auto mt-4 w-28 h-1.5 bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-600 rounded-full" />
         </motion.div>
@@ -142,7 +145,7 @@ const Experience = () => {
                     <img
                       src={exp.imageUrl}
                       alt={exp.institution}
-                      className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-contain border-4 border-white shadow-md"
+                      className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-white shadow-md"
                     />
                     <div className="flex-1">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">

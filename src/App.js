@@ -85,8 +85,9 @@ function App() {
 
       {/* ✨ Footer */}
       <footer className="text-center py-10 text-sm text-fuchsia-700/80">
-        © {new Date().getFullYear()} Portfolio Étudiante L3 – Made with 💖 React & TailwindCSS
-      </footer>
+  Portfolio ELMAWLA Yara
+</footer>
+
     </div>
   );
 }

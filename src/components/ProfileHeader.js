@@ -6,14 +6,14 @@ import avatar from "../assets/image0.jpeg";
 import cvFile from "../assets/image0.jpeg";
 
 const NAME = "Yara ELMAWLA";
-const TAGLINE = "Étudiante en L3 Informatique à l’Université de Bordeaux • Développement Web • Data & IA";
+const TAGLINE =
+  "Étudiante en L3 Informatique à l’Université de Bordeaux • Développement Web • Data & IA";
 
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/yara-elmawla-128369376/",
   github: "https://github.com/yaraelmawla",
-  email: "mailto:yara.elmawla@example.com",
+  email: "mailto:yaramawla3@gmail.com",
 };
-
 
 const fadeUp = {
   hidden: { opacity: 0, y: 16 },
@@ -38,24 +38,20 @@ export default function ProfileHeader() {
         {/* Left: avatar + text */}
         <div className="flex flex-col sm:flex-row items-center gap-6">
           <motion.div
-            whileHover={{ rotate: 2, scale: 1.03 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="relative group"
           >
-            <div className="relative p-1 rounded-full bg-gradient-to-tr from-pink-400 via-fuchsia-500 to-purple-600">
+            <div className="rounded-full overflow-hidden h-44 w-44 sm:h-48 sm:w-48 md:h-52 md:w-52">
               <img
                 src={avatar}
                 alt={`${NAME} portrait`}
-                className="block h-36 w-36 sm:h-40 sm:w-40 md:h-44 md:w-44 rounded-full object-cover ring-4 ring-white"
+                className="h-full w-full object-cover scale-110"
                 draggable="false"
               />
             </div>
-
-            <div className="absolute inset-0 hidden place-items-center rounded-full bg-gradient-to-tr from-fuchsia-500/70 to-pink-400/70 group-hover:grid transition-opacity duration-300">
-              <span className="text-white font-semibold text-lg select-none"> Yara </span>
-            </div>
           </motion.div>
 
+          {/* Texte */}
           <div className="text-center sm:text-left">
             <h1 className="text-slate-900 text-3xl md:text-4xl font-extrabold tracking-tight">
               {NAME}
@@ -86,20 +82,16 @@ export default function ProfileHeader() {
         </div>
 
         {/* Right: actions */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-          <a href={cvFile} download="Cv_Saad_KHATTAB_HPC.pdf" className="w-full sm:w-auto">
-            <button
-              className="w-full sm:w-auto h-12 px-6 inline-flex items-center justify-center gap-2 rounded-2xl font-semibold text-white shadow-lg shadow-pink-500/40 hover:shadow-pink-500/60 active:translate-y-[1px] transition bg-gradient-to-tr from-pink-500 via-fuchsia-500 to-purple-600"
-            >
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mt-4 sm:mt-0">
+          <a href={cvFile} download="Cv_Yara_ELMAWLA.pdf" className="w-full sm:w-auto">
+            <button className="w-full sm:w-auto h-12 px-6 inline-flex items-center justify-center gap-2 rounded-2xl font-semibold text-white shadow-lg shadow-pink-500/40 hover:shadow-pink-500/60 active:translate-y-[1px] transition bg-gradient-to-tr from-pink-500 via-fuchsia-500 to-purple-600">
               <FaFilePdf />
               <span>Télécharger le CV</span>
             </button>
           </a>
 
           <a href={LINKS.email} className="w-full sm:w-auto">
-            <button
-              className="w-full sm:w-auto h-12 px-6 inline-flex items-center justify-center gap-2 rounded-2xl font-semibold text-fuchsia-600 bg-white border-2 border-fuchsia-500 hover:border-pink-400 hover:-translate-y-0.5 active:translate-y-[1px] transition"
-            >
+            <button className="w-full sm:w-auto h-12 px-6 inline-flex items-center justify-center gap-2 rounded-2xl font-semibold text-fuchsia-600 bg-white border-2 border-fuchsia-500 hover:border-pink-400 hover:-translate-y-0.5 active:translate-y-[1px] transition">
               <HiOutlineMail />
               <span>Me contacter</span>
             </button>

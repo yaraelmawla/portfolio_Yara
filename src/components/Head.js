@@ -24,7 +24,7 @@ const navigation = [
   { name: 'Projects', href: '#projects', current: false },
   { name: 'Skills', href: '#skills', current: false },
   { name: 'Certificates', href: '#Certificates', current: false },
-  { name: 'Contact', href: 'mailto:yara.mawla@example.com?subject=Contact from Website', current: false },
+  { name: 'Contact', href: 'mailto:yaramawla3@gmail.com?subject=Contact from Website', current: false },
 ];
 
 function classNames(...classes) {
