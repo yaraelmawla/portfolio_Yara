@@ -13,7 +13,7 @@ import img from "../assets/image0.jpeg";
 
 const user = {
   name: 'Yara ELMAWLA',
-  email: 'yara.elmawla@example.com',
+  email: 'yaramawla3@gmail.com',
   imageUrl: img,
 };
 
