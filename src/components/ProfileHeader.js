@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import avatar from "../assets/image0.jpeg";
-import cvFile from "../assets/image0.jpeg";
+
+const CV_FILE = process.env.PUBLIC_URL + "/ELMAWLA_Yara_CV.pdf";
 
 const NAME = "Yara ELMAWLA";
 const TAGLINE =
@@ -83,7 +84,13 @@ export default function ProfileHeader() {
 
         {/* Right: actions */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mt-4 sm:mt-0">
-          <a href={cvFile} download="Cv_Yara_ELMAWLA.pdf" className="w-full sm:w-auto">
+        <a
+          href={CV_FILE}
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto"
+        >
             <button className="w-full sm:w-auto h-12 px-6 inline-flex items-center justify-center gap-2 rounded-2xl font-semibold text-white shadow-lg shadow-pink-500/40 hover:shadow-pink-500/60 active:translate-y-[1px] transition bg-gradient-to-tr from-pink-500 via-fuchsia-500 to-purple-600">
               <FaFilePdf />
               <span>Télécharger le CV</span>
