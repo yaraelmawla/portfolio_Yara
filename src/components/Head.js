@@ -13,7 +13,7 @@ import img from "../assets/image0.jpeg";
 
 const user = {
   name: 'Yara ELMAWLA',
-  email: 'yaramawla3@gmail.com',
+  email: 'yara.elmawlaa@gmail.com',
   imageUrl: img,
 };
 
@@ -24,7 +24,7 @@ const navigation = [
   { name: 'Projects', href: '#projects', current: false },
   { name: 'Skills', href: '#skills', current: false },
   { name: 'Certificates', href: '#Certificates', current: false },
-  { name: 'Contact', href: 'mailto:yaramawla3@gmail.com?subject=Contact from Website', current: false },
+  { name: 'Contact', href: 'mailto:yara.elmawlaa@gmail.com?subject=Contact from Website', current: false },
 ];
 
 function classNames(...classes) {

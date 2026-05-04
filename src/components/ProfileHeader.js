@@ -13,7 +13,7 @@ const TAGLINE =
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/yara-elmawla-128369376/",
   github: "https://github.com/yaraelmawla",
-  email: "mailto:yaramawla3@gmail.com",
+  email: "mailto:yara.elmawlaa@gmail.com",
 };
 
 const fadeUp = {
