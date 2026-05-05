@@ -8,7 +8,7 @@ const CV_FILE = process.env.PUBLIC_URL + "/ELMAWLA_Yara_CV.pdf";
 
 const NAME = "Yara ELMAWLA";
 const TAGLINE =
-  "Étudiante en L3 Informatique à l’Université de Bordeaux • Développement Web • Data & IA";
+  "Admise en Mastère Data Engineering & IA à l’EFREI Bordeaux | Recherche d’alternance 2 ans — rentrée 2026";
 
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/yara-elmawla-128369376/",

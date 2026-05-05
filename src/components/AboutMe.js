@@ -4,15 +4,15 @@ import { ArrowRight } from "lucide-react";
 import pdp from "../assets/image0.jpeg"; // à remplacer par ta propre photo
 
 const aboutMeContent = {
-  intro1: "Actuellement étudiante en ",
-  highlight1: "3ᵉ année de Licence Informatique",
-  intro2: " à l’",
-  highlight2: "Université de Bordeaux",
-  intro3: ", je suis passionnée par le ",
-  highlight3: "développement logiciel, l’intelligence artificielle et les nouvelles technologies",
-  intro4: ". Je suis à la recherche d’une ",
-  highlight4: "alternance à partir de septembre 2025",
-  intro5: " afin de renforcer mes compétences techniques et professionnelles au sein d’une équipe innovante.",
+intro1: "Admise en ",
+highlight1: "Mastère Data Engineering & IA",
+intro2: " à l'",
+highlight2: "EFREI Bordeaux",
+intro3: ", je suis passionnée par la ",
+highlight3: "data et l'intelligence artificielle",
+intro4: ". Je recherche un ",
+highlight4: "contrat d'apprentissage de 2 ans à partir de septembre 2026",
+intro5: " (rythme : 2 semaines entreprise / 1 semaine école) pour contribuer à des projets concrets en data engineering.",
 
   block2_1: "Ma formation m’a permis d’acquérir des bases solides en ",
   highlight5: "programmation (Python, Java, C)",
